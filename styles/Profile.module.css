@@ -1,0 +1,228 @@
+.profcont{
+    width:100%;
+    text-align: center;
+}
+.bgimg{
+    height: 250px;
+    width: 100%;
+        object-fit: cover;
+        
+}
+.pfpdiv{
+    width:300px;
+    height: 300px;
+    background:none;
+    margin: auto;
+    margin-top:-130px;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid grey;
+    z-index: 0;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pfp{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profcont h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.profcont h3{
+    font-family: "Trirong", serif;
+}
+.profcont h4{
+    font-family: "Trirong", serif;
+}
+.profcont p{
+    font-family:'Comic Neue';
+    font-size:x-large;
+}
+.profcont a{
+    font-size: x-large;
+    margin: 30px;
+    transition:0.2s;
+    background: none;   
+    border: none;
+}
+.stats{
+    
+    background: none;
+ 
+    width:100%;
+    text-align: center;
+    display: flex;
+    
+}
+.stats h1{
+    display:inline;
+    margin:auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+.statcont{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width:80%;
+    margin:auto;   border-radius: 20px;
+}
+.optionscont{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.options{
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 25px;
+    margin: 0px 20%;
+    display: inline;
+    transition-duration:0.2s ;
+}
+.sortpost{
+    cursor: pointer;
+    font-size: large;
+    padding: 5px 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(121, 163, 58);
+    background:none;
+    transition-duration: 0.2s;
+}
+.sortcont{
+    position: absolute;
+    width:200px;
+    height: 0px;
+    background: lightgray;
+    border-radius: 10px;
+    z-index: 4;
+    margin-left: 20px;
+    opacity: 0;
+    transition-duration:0.3s ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.follow{
+    width: fit-content;
+    font-size: x-large;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+    margin-right: 30px;
+    background: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(121, 163, 58);
+    transition-duration:0.2s;
+}
+.request{
+    width: fit-content;
+    cursor: pointer;
+    font-size: x-large;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px;
+    margin-right: 0px;
+    background: none;
+    border-radius: 20px;
+    border: 2px solid rgb(121, 163, 58);
+    transition-duration:0.2s;
+}
+.request:hover,.follow:hover{
+    background: rgb(153, 228, 41);
+    color:white;
+}
+.reqcont{
+    background:greenyellow;
+    width:80%;
+    border-radius: 20px;
+    height: 80%;
+    position: fixed;
+    scale:0;
+    opacity: 0;
+    z-index: 200;
+    top:10%;
+    left:10%;
+    border: 2px solid rgb(121, 163, 58);
+    transition-duration: 0.25s;
+   align-items: center;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+text-align: center;
+}
+.reqcont .cls{
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    border:none;
+    color:black;
+    font-size: x-large;
+    right: 10px;
+    top:10px;
+}
+.reqcont textarea{
+    width: 90%;
+    height: 70%;
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 20px;
+}
+.reqcont h2{
+    font-family: cursive;
+    text-decoration: underline;
+}
+.sendbtn{
+    cursor: pointer;
+    font-size: x-large;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.optionboard{
+    margin-top:60px;
+    width: 20%;
+    height: 40px;
+    padding:5px 0px;
+    text-align: center;
+    transition-duration: 0.5s;
+    background: greenyellow;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    z-index: 50;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.downchev{
+   margin-top: 0px;
+    cursor: pointer;
+    border: none;
+    background:none;
+    color:black;
+    font-size: xx-large;
+    transition-duration: 0.5s;
+}
+@media (max-width: 700px) {
+    .optionboard{
+        width: 100%;
+    }
+    .pfpdiv{
+        width:200px;
+        height: 200px;
+    }
+    .stats h1{
+     font-size: medium;  
+    }
+    .options{
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-size: larger;
+        margin: 0px 10%;
+        display: inline;
+    }
+    .reqcont h2{
+        scale:70%;
+    }
+}

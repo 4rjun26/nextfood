@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.info{
+    width:350px;
+    height: 500px;
+    background:none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+text-align: center;
+}
+.info input{
+    width:90%;
+    font-size: 25px;
+    margin-top:20%;
+}
+.info h1{
+    margin-top: 30px;
+}
+.eye{
+    cursor: pointer;
+    border: none;
+    background: none;
+    scale: 200%;
+    position:relative;
+    right:20px;
+    color:grey;
+}
+.login{
+    cursor: pointer;
+    transition-duration: 0.2s;
+    margin-top: 20%;
+    border: 2px solid black;
+    background: none;
+    width:100px;
+    height: 50px;
+    font-size: 25px;
+}
+.login:hover{
+    background: black;
+    color:white;
+}
+.others{
+    margin-top: 10%;
+    text-align: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.link{
+    display: block;
+}
+.link:hover{
+    color:rgb(75, 166, 202);
+}

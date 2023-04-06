@@ -1,0 +1,159 @@
+.searchnsort{
+    width:100%;
+    height:100px;
+    background-color:none;
+    text-align: center;
+}
+.searchnsort button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    scale:120%;
+}
+.searchbar{
+    padding:5px;
+    width:90%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-top:30px;
+}
+.card{
+    width:200px;
+    height: 150px;
+    background: white;
+    border: none;
+    /*margin-top: 30px; */
+    margin-bottom: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.stats{
+    position: absolute;
+    width:200px;
+    height: 150px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.stats h1{
+    color: white;
+}
+.username,.bio{
+    position: relative;
+    top:-50px;
+    text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+.username{
+    width: fit-content;
+}
+.username:hover{
+    color:#0000EE;
+}
+.statinfo{
+    position: relative;
+    top:-50px;
+    margin-left: 20px;
+    text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+.pfp{
+    position: relative;
+    width:100px;
+    height: 100px;
+    top:-80px;
+    background: white;
+margin-left:10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pfpimg{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.follow{
+    position: relative;
+   margin-left: 120px;
+   margin-top: 5px;
+   padding: 5px;
+   border-radius: 20px;
+   font-size: 15px;
+   background: none;
+   border: 2px solid rgb(121, 163, 58);
+   cursor: pointer;
+   transition-duration:0.2s ;
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+  .row{
+    margin:30px;
+  }
+.sortby{
+    cursor: pointer;
+    margin-left:30px;
+    font-size: large;
+    width: 100px;
+}
+.b1{
+    cursor: pointer;
+    font-size: large;
+    width: 100px;
+    position: relative;
+    margin-left: 30px;
+   top: -25px;
+   transition-duration: 0.2s;
+   z-index: -1;
+}
+.b2{
+    cursor: pointer;
+    font-size: large;
+    width: 100px;
+    position: relative;
+    margin-left: 30px;
+    top: -50px;
+   transition-duration: 0.7s;
+   z-index: -1;
+}
+.b3{
+    cursor: pointer;
+    font-size: large;
+    width: 100px;
+    position: relative;
+    margin-left: 30px;
+    top: -75px;
+   transition-duration: 1.2s;
+   z-index: -1;
+}
+.b4{
+    cursor: pointer;
+    font-size: large;
+    width: 100px;
+    position: relative;
+    margin-left: 30px;
+    top: -100px;
+   transition-duration: 1.7s;
+   z-index: -1;
+}
+.sortcont{
+    background:none;
+}
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      margin-left: 20%;
+    }
+  }
+  

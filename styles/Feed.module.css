@@ -1,0 +1,329 @@
+
+.feedsection{
+    margin-top: 30px;
+    width: 100%;
+    overflow-y: hidden;
+    background: rgb(157, 230, 48);
+    display: flex;
+    padding-bottom: 100px;
+}
+/* .feedcont{
+    width:90%;
+    background:yellow;
+    
+} */
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 0 30px;
+  }
+  .row {width:100%;margin: 0 -5px;}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.card{
+    width:350px;
+    border-radius: 20px;
+    height: 330px;
+    margin: 20px;
+    flex:1;
+    z-index: 2;
+    background-color: white;   
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition-duration: 0.2s;
+}
+.review{
+    display: none;
+}
+.imgdiv{
+    width:100%;
+    height: 230px; 
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;  
+}
+.img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.moreinfo p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.lc{
+    display: inline;
+    color:red;
+    margin-left: 20%;
+}
+.moreinfo h4{
+    display: inline;
+    color:green;
+    margin-left: 30%;
+}
+.decision{
+    cursor: pointer;
+    margin-top:5px;
+    margin-right:10%;
+    margin-left:18%;
+    font-size:large;
+    border-radius: 10px;
+    width:60px;
+    background-color: white;
+    border: 1px solid black;
+    transition-duration:0.2s ;
+}
+.decision:hover{
+    background-color: green;
+    color:white;
+}
+.loadrev{
+    background: none;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+}
+.loadrev:hover{
+    text-decoration: underline;
+}
+.card h3{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    max-width:100%;
+    line-break: anywhere;
+    word-break: normal;
+}
+.username{
+    position: absolute;
+    margin-top: 10px;
+    font-size:large;
+    display:inline;
+}
+.username:hover{
+    color:#0000EE;
+}
+.follow{
+    position: absolute;
+    cursor: pointer;
+    font-size:15px;
+    margin-top: 10px;
+    width:70px;
+    margin-left:19%;
+    border:1px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: none;
+    transition-duration: 0.1s;
+}
+.following{
+    cursor: pointer;
+    font-size:15px;
+    margin-top: 10px;
+    margin-left:52%;
+    border:1px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: greenyellow;
+}
+.expand{
+    position: relative;
+    bottom: 280px;
+    left: 300px;
+    cursor: pointer;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    height: 50px;
+    background: none;
+    border: none;
+    color:rgb(226, 220, 220);
+}
+.picslider{
+    position: relative;
+    bottom: 280px;
+    right: 40px;
+    cursor: pointer;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    height: 50px;
+    background: none;
+    border: none;
+    color:rgb(226, 220, 220);
+}
+.expand:hover,.picslider:hover{
+    color:white;
+}
+.card h4{
+    margin-top:10px;
+}
+.searchnsort{
+    width:100%;
+    height:100px;
+    background-color:none;
+    text-align: center;
+}
+.searchnsort button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    scale:120%;
+}
+.searchbar{
+    padding:5px;
+    width:90%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-top:30px;
+}
+.optionbtncont{
+    padding: 10px;
+    text-align: left;
+    overflow: auto;
+  white-space: nowrap;
+}
+.opbtns{
+    cursor: pointer;
+    background: none;
+    font-size: large;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+.opbtns:hover{
+    background-color: rgb(235, 233, 233);
+}
+.foodbtns{
+    cursor: pointer;
+    font-size: large;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: none;
+    border: none;
+}
+.btnimg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.sortcont{
+    position: absolute;
+    width: 220px;
+    height: 300px;
+    background-color: rgb(182, 182, 182);
+    transition-duration:0.3s ;
+    transform-origin:top left ;
+    scale:0;
+    border-radius: 10px;
+    z-index: 10;
+    opacity: 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.sortcont li button{
+    cursor: pointer;
+    border: none;
+    width:100%;
+    text-align: center;
+    height:55px;
+    background: none;
+    font-size: large;
+}
+.sortcont li button:hover{
+    border: 1px solid grey;
+}
+.close{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left:91%;
+    margin-top: 3%;
+}
+.picscontainer{
+    background:rgba(0,0,0,0.8);
+    width:100%;
+    height: 100%;
+    position: fixed;
+    scale:0;
+    opacity: 0;
+    z-index: 200;
+    top:0px;
+    transition-duration: 0.25s;
+   align-items: center;
+   text-align: center;
+}
+.gole{
+    cursor: pointer;
+    margin: 20px;
+    font-size: large;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    border:2px solid white;
+    background: none;
+    color:white;
+    font-weight: bold;
+}
+.picscontainer .cls{
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    border:none;
+    color:white;
+    font-size: x-large;
+    right: 10px;
+    top:10px;
+}
+.picscontainer .pics{
+    margin-left: 9%;
+    margin-top: 50px;
+    width:80%;
+    height: 80%;
+    background: none;
+    border: none;
+
+}
+.SRF{
+    margin-left:30px;
+    width:fit-content;
+    display: none;
+    font-family:cursive;
+}
+.zoomimg{
+    width:100%;
+    height: 100%;
+    object-fit:contain;
+    transition-duration: 0.5s;
+}
+@media (max-width: 700px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    .card{
+        width:350px;
+        margin-right: auto;
+        margin-left: auto;
+        position:initial;
+    }
+    .follow{
+        margin-left:62%;
+    }
+}
